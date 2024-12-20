@@ -1,0 +1,31 @@
+.timer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    display: flex;
+}
+.timerinput{
+    width: 30px;
+    margin-right: 1rem;
+    font-size: 20px;
+    text-align: center;
+    padding:0.1rem 0.2rem;
+    border-radius: 5px;
+}
+.timerinput:hover{
+    background-color:rgb(236, 236, 236);
+}
+.countdown{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: hsla(0, 0%, 10%, 0.2);
+    background-color: white;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }

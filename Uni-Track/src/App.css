@@ -1,0 +1,128 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create_form input{
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+.create_form button{
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.tasks {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  justify-content: space-between;
+  background-color:lightblue;
+  color: black;
+  height: 35px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.line_through {
+  text-decoration: line-through;
+}
+.checkbox .icon {
+  margin-right: 5px;
+  font-size: 15px;
+}
+.task div span {
+  margin: 0px 5px 0px 4px;
+}
+.task div .icon {
+  cursor: pointer;
+}
+.app-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+  height: 100vh;
+  width: 100%;
+}
+
+.task-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+h4 {
+  color: #000;
+}
+
+.header {
+  grid-area: header;
+  background-color: #87bae4;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-content {
+  display: grid;
+  grid-area: content;
+  grid-template-columns: 1fr;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.task-page button{
+  background-color: #87bae4;
+}
+
+.task-page button:hover{
+  background-color: #258de2;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #e1e1e1;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #87bae4;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
